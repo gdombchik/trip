@@ -6,4 +6,14 @@ class TripControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get broadway_bridge" do
+    get trip_broadway_bridge_url
+    assert_response :success
+  end
+
+  test "should get korea town" do
+    get trip_korea_town_url
+    assert_response :success
+  end
+
 end
