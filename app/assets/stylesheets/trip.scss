@@ -1,0 +1,32 @@
+// Place all the styles related to the Trip controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#toc_container {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #aaa;
+  //display: table;
+  margin-bottom: 1em;
+  padding: 20px;
+  //width: auto;
+}
+.toc_title {
+  font-weight: 700;
+  text-align: center;
+}
+#toc_container li, #toc_container ul, #toc_container ul li{
+  list-style: outside none none !important;
+  //text-indent: 300px;
+}
+
+.borderless td, .borderless th {
+  border: none !important;
+}
+
+.rotate90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
