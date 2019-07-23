@@ -17,5 +17,4 @@ class TripControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "p", "Korea Town"
   end
-
 end
