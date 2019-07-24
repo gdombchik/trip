@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   root 'trip#toc'
 
   get 'trip/broadway_bridge'
-  get 'trip/korea_town'
+  get 'trip/koreatown'
   get 'trip/chinatown'
 end

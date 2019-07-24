@@ -18,9 +18,9 @@ class TripController < ApplicationController
     render 'trip/render_pic'
   end
 
-  def korea_town
-    @title = trip_korea_town_path
-    render 'trip/korea_town'
+  def koreatown
+    @title = trip_koreatown_path
+    render 'trip/koreatown'
   end
 
   private
