@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get 'trip/saturday_market'
   get 'trip/voodoo_doughnut'
   get 'trip/keep_portland_weird'
+  get 'trip/deadstock_coffee'
 end

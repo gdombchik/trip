@@ -25,6 +25,11 @@ class TripController < ApplicationController
     render_pic("portland/old_town/keep_portland_weird/*.JPG",trip_keep_portland_weird_path)
   end
 
+  def deadstock_coffee
+    @title = trip_deadstock_coffee_path
+    render 'trip/deadstock_coffee'
+  end
+
   def koreatown
     @title = trip_koreatown_path
     render 'trip/koreatown'
