@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'trip/broadway_bridge'
   get 'trip/koreatown'
   get 'trip/chinatown'
+  get 'trip/saturday_market'
 end
