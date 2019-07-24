@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 
   get 'trip/broadway_bridge'
   get 'trip/korea_town'
+  get 'trip/chinatown'
 end

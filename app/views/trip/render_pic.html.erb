@@ -1,0 +1,11 @@
+</br>
+<%= render 'trip/title' %>
+<div class="text-center">
+  <% @images.each do |image| %>
+    <%= link_to image_tag(image.split('app/assets/images/').last, class: "img-thumbnail rounded", width: "50%") %>
+  <% end %>
+</div>
+</br>
+<div class="text-center">
+  <%= link_to "Back",root_url %>
+</div>
