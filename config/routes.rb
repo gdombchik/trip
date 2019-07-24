@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'trip/koreatown'
   get 'trip/chinatown'
   get 'trip/saturday_market'
+  get 'trip/voodoo_doughnut'
 end
