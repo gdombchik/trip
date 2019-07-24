@@ -4,18 +4,13 @@ class TripController < ApplicationController
 
   def broadway_bridge
     #call specific view
-    # render 'trip/broadway_bridge'
+    #render 'trip/broadway_bridge'
 
-    #call generic view
-    get_images("portland/broadway_bridge/*.JPG")
-    @title = trip_broadway_bridge_path
-    render 'trip/render_pic'
+    render_pic("portland/broadway_bridge/*.JPG",trip_broadway_bridge_path)
   end
 
   def chinatown
-    get_images("portland/chinatown/*.JPG")
-    @title = trip_chinatown_path
-    render 'trip/render_pic'
+    render_pic("portland/chinatown/*.JPG",trip_chinatown_path)
   end
 
   def koreatown
@@ -25,7 +20,10 @@ class TripController < ApplicationController
 
   private
 
-  def get_images(path)
-    @images = Dir.glob("app/assets/images/#{path}")
+  #call generic view
+  def render_pic(image_path,page_path)
+    @images = Dir.glob("app/assets/images/#{image_path}")
+    @title = page_path
+    render 'trip/render_pic'
   end
 end
